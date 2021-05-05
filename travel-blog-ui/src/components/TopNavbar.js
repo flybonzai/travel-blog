@@ -1,12 +1,12 @@
 import '../style/TopNavbar.css'
-import {Button, Form, FormControl, Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 function TopNavbar() {
   return (
     <Navbar className={'top-navbar'} expand={'lg'}>
       <Navbar.Toggle aria-controls='top-navbar' />
       <Navbar.Collapse id='top-navbar'>
-        <Nav className='mr-auto'>
+        <Nav className='d-flex justify-content-end'>
           <Nav.Link  href='/home' className={'top-navbar-text text-white'}>Home</Nav.Link>
           <NavDropdown title='Destinations' id='destinations' className={'top-navbar-text text-white'}>
             <NavDropdown.Item href='#action/3.1'>China 2015</NavDropdown.Item>
@@ -26,10 +26,6 @@ function TopNavbar() {
           <Nav.Link  href='/shop' className={'top-navbar-text text-white'}>Shop</Nav.Link>
           <Nav.Link  href='/resources' className={'top-navbar-text text-white'}>Resources</Nav.Link>
         </Nav>
-        <Form inline>
-          <FormControl type='text' placeholder='Search' className='mr-sm-2' />
-          <Button variant='outline-success'>Search</Button>
-        </Form>
       </Navbar.Collapse>
     </Navbar>
   );
