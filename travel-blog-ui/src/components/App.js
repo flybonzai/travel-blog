@@ -7,7 +7,7 @@ function App() {
     <div className="App" >
       <Container fluid>
         <TopNavbar />
-        <h1>Jobs fill your pockets, adventures fill your soul</h1>
+        <div className={'travel-quote text-white'}>Jobs fill your pockets, <br/> adventures fill your soul</div>
       </Container>
     </div>
   );

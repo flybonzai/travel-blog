@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../assets/Lato-Regular.ttf');
+}
+
 .top-navbar-text {
   font-size: 25px;
+  font-family: lato, sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  margin: 0 15px 0 15px;
 }
 
 .top-navbar {

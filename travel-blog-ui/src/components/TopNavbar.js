@@ -5,10 +5,11 @@ function TopNavbar() {
   return (
     <Navbar className={'top-navbar'} expand={'lg'}>
       <Navbar.Toggle aria-controls='top-navbar' />
-      <Navbar.Collapse id='top-navbar'>
-        <Nav className='d-flex justify-content-end'>
+      <Navbar.Collapse id='top-navbar' className='justify-content-end'>
+        <Nav>
           <Nav.Link  href='/home' className={'top-navbar-text text-white'}>Home</Nav.Link>
-          <NavDropdown title='Destinations' id='destinations' className={'top-navbar-text text-white'}>
+          <Nav.Link  href='/travel-hacks' className={'top-navbar-text text-white'}>Travel Hacks</Nav.Link>
+          <NavDropdown title='Adventures' id='adventures' className={'top-navbar-text text-white'}>
             <NavDropdown.Item href='#action/3.1'>China 2015</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href='#action/3.2'>Italy 2017</NavDropdown.Item>
@@ -23,8 +24,6 @@ function TopNavbar() {
             <NavDropdown.Divider />
             <NavDropdown.Item href='#action/3.4'>Grand Canyon 2020</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link  href='/shop' className={'top-navbar-text text-white'}>Shop</Nav.Link>
-          <Nav.Link  href='/resources' className={'top-navbar-text text-white'}>Resources</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
