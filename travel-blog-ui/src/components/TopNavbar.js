@@ -9,7 +9,7 @@ function TopNavbar() {
         <Nav>
           <Nav.Link  href='/home' className={'top-navbar-text text-white'}>Home</Nav.Link>
           <Nav.Link  href='/travel-hacks' className={'top-navbar-text text-white'}>Travel Hacks</Nav.Link>
-          <NavDropdown title='Adventures' id='adventures' className={'top-navbar-text text-white'}>
+          <NavDropdown title='Trips' id='adventures' className={'top-navbar-text text-white'}>
             <NavDropdown.Item href='#action/3.1'>China 2015</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href='#action/3.2'>Italy 2017</NavDropdown.Item>
